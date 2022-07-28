@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +19,7 @@ import { LogoComponent } from './componentes/logo/logo.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { SocialComponent } from './componentes/social/social.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +34,16 @@ import { SocialComponent } from './componentes/social/social.component';
     LoginComponent,
     LogoComponent,
     ProyectosComponent,
-    SocialComponent
+    SocialComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    NgCircleProgressModule.forRoot(
+      {})
   ],
   providers: [],
   bootstrap: [AppComponent]

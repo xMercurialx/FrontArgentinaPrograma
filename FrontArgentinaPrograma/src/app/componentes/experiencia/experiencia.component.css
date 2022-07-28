@@ -1,0 +1,13 @@
+.row{padding: 20px;}
+div{background-color: white;}
+.form-group{color: aqua;}
+h1 ,h3, h5, p{color: blue;}
+h1, h2, h3{display: inline;}
+a{float:right;}
+button{color: black;}
+    img{
+        width: 350px;
+        border-radius: 20%;
+        box-shadow: 4px 3px 3px rgb(224, 228, 218);
+        left: 2%;
+        top: 202px;}

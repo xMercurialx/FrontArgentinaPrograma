@@ -1,1 +1,6 @@
-<p>social works!</p>
+<div class="redes">
+    <a href="https://github.com/xMercurialx"><img src="../../../assets/Git.png" id="github"/></a>
+    <a href="https://www.linkedin.com/in/roberto-ezequiel-vildoza-07ab90246/"><img src="../../../assets/Linkedin.jpg" id="linkedin"/></a>
+    <button type="button" class="btn btn-outline-dark" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+    <button type="button" class="btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+</div>
