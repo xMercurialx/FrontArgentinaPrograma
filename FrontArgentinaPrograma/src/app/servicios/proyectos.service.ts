@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { Proyectos } from '../models/proyectos';
 
 @Injectable({
@@ -9,7 +8,7 @@ import { Proyectos } from '../models/proyectos';
 })
 export class ProyectosService {
 
-  private apiServerUrl=environment.apiBaseUrl;
+  private apiServerUrl='https://argentinaback.herokuapp.com/';
 
   constructor(private http:HttpClient) { }
 
