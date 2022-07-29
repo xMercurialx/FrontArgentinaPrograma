@@ -8,19 +8,19 @@ import { Proyectos } from '../models/proyectos';
 })
 export class ProyectosService {
 
-  private apiServerUrl='https://argentinaback.herokuapp.com/';
+  private proyUrl='https://argentinaback.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 
   public getProyectos():Observable<Proyectos[]>{
-    return this.http.get<Proyectos[]>(`${this.apiServerUrl}/proyectos/all`);}
+    return this.http.get<Proyectos[]>(`${this.proyUrl}/proyectos/all`);}
     
   public addProyectos(proyectos:Proyectos):Observable<Proyectos>{
-    return this.http.post<Proyectos>(`${this.apiServerUrl}/proyectos/add`,proyectos);}
+    return this.http.post<Proyectos>(`${this.proyUrl}/proyectos/add`,proyectos);}
   
   public updateProyectos(proyectos:Proyectos):Observable<Proyectos>{
-    return this.http.put<Proyectos>(`${this.apiServerUrl}/proyectos/update`,proyectos);}
+    return this.http.put<Proyectos>(`${this.proyUrl}/proyectos/update`,proyectos);}
   
   public deleteProyectos(proyectosId: number):Observable<void>{
-    return this.http.delete<void>(`${this.apiServerUrl}/proyectos/delete/${proyectosId}`);}
+    return this.http.delete<void>(`${this.proyUrl}/proyectos/delete/${proyectosId}`);}
 }

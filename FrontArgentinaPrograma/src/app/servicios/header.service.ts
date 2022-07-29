@@ -8,14 +8,14 @@ import { Persona } from '../models/persona';
   providedIn: 'root'
 })
 export class HeaderService {
-  private apiServerUrl='https://argentinaback.herokuapp.com/';
+  private eduUrl='https://argentinaback.herokuapp.com';
   
 
   constructor(private http:HttpClient) { }
   
   public getUser():Observable<Persona>{
   return this.http.get<Persona>
-  (`${this.apiServerUrl}/persona/id/1`);}
+  (`${this.eduUrl}/persona/id/1`);}
   public updatePersona(persona: Persona):Observable<Persona>{
-  return this.http.put<Persona>(`${this.apiServerUrl}/persona/update`,persona);}
+  return this.http.put<Persona>(`${this.eduUrl}/persona/update`,persona);}
 }
