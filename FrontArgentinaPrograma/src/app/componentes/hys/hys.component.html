@@ -1,14 +1,15 @@
+<hr>
 <div class="row skill main-container">
-    <h1>Skills</h1>
+    <h1>Hard and Soft Skills</h1>
     <div class="text-center">
         <button type="button" class="btn btn-primary" (click)="onOpenModal('add')" *ngIf="isLogged">
          <a class="nav-link" style="color:white"> 
-            Agregar Nueva Skill <span class="sr-only">(current)</span></a>
+            Agregar Nueva Habilidad<span class="sr-only">(current)</span></a>
         </button>
     </div>
 <div class="container-fluid">
     <div class="row">
-    <div *ngFor="let skills of skillss" class="text-center col-sm-4 col-md-4 col-lg-4"  >
+    <div *ngFor="let skills of skillss" class="col-sm-4 col-md-4 col-lg-4"  >
         
                 <h3>{{skills.nombreSkill}}
                     <a 
@@ -38,14 +39,14 @@
             [radius]="90"
             [imageSrc]="skills.imagenSkill"
             [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
+            [imageHeight]="100"
+            [imageWidth]="100"
             [showUnits]="false"
             [showSubtitle]="false"
             [outerStrokeWidth]="16"
             [innerStrokeWidth]="2"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
+            [outerStrokeColor]="'#0043c0'"
+            [innerStrokeColor]="'#b611e3'"
             [animation]="true"
             [animationDuration]="600"
         ></circle-progress>

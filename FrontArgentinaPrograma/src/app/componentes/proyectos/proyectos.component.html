@@ -1,9 +1,10 @@
+<hr>
 <div class="row proy main-container">
     <h1>Proyectos</h1>
     <div class="text-center">
-        <button type="button" class="btn btn-success" (click)="onOpenModal('add')" *ngIf="isLogged">
-         <a class="nav-link" style="color:white"> 
-            Agregar Proyectos <span class="sr-only"> (current) </span></a>
+        <button type="button" class="btn btn-primary" (click)="onOpenModal('add')" *ngIf="isLogged">
+            <a class="nav-link" style="color:white">
+            Agregar Nuevo Proyecto <span class="sr-only"> (current) </span></a>
         </button>
     </div>
 <div id="main-container">
@@ -13,11 +14,11 @@
              <div class="col">
                 <img src="{{ proyectos.imagenProy}}" alt=""/>
                     </div>
-            <div class="col">
+            <div class="col text-center">
                 <h3>{{ proyectos.tituloProy }}</h3>
                 <div class="row">
                     <div class="col align-self-end">
-                        <p>{{proyectos.descProy}}</p>
+                        <h5>{{proyectos.descProy}}</h5>
                     </div>
                 </div>
              </div>

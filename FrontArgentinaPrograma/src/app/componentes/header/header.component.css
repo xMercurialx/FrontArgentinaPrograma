@@ -9,21 +9,20 @@ h4{
    font-weight: bold;
    margin-top: 30px;
    margin-left: 10px;
-   color: black;
+   color: blue;
 }
 h5{
     font-weight: bold;
     margin-top: 50px;
     margin-left: 10px;
-    color: black;
+    color: blue;
  }
  h1{
-     color: black;
+     color: blue;
      margin-top: 60px;
  }
- p, h4, h5{
-     color: black;
- }
+ p{color: blueviolet;}
+ 
  @media(min-width:576px){
      img{
          width: 200px;

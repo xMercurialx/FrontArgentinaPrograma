@@ -28,9 +28,7 @@ export class ExperienciaComponent implements OnInit {
       this.isLogged = false;
     }
   }
-  // ngOnInit(): void {
-  //   this.getExperiencias();
-  // }
+
   public getExperiencias():void{
     this.experienciaService.getExperiencia().subscribe({
       next:(Response:Experiencia[])=>{

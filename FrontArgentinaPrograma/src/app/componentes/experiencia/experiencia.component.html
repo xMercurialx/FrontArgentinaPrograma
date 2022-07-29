@@ -1,9 +1,10 @@
+<hr>
 <div class="row exp main-container">
     <h1>Experiencia</h1>
     <div class="text-center">
-        <button type="button" class="btn btn-success" (click)="onOpenModal('add')" *ngIf="isLogged">
-         <a class="nav-link" style="color:white"> 
-            Añadir Experiencia <span class="sr-only"> (current) </span></a>
+        <button type="button" class="btn btn-primary" (click)="onOpenModal('add')" *ngIf="isLogged">
+            <a class="nav-link" style="color:white">
+            Agregar Nueva Experiencia Laboral <span class="sr-only"> (current) </span></a>
         </button>
     </div>
 <div id="main-container">
@@ -13,11 +14,12 @@
              <div class="col">
                 <img src="{{ experiencia.imagenExp}}" alt=""/>
                     </div>
-            <div class="col">
+                    
+            <div class="col text-center">
                 <h3>{{ experiencia.tituloExp }}</h3>
                 <div class="row">
                     <div class="col align-self-end">
-                        <p>{{experiencia.descExp}}</p>
+                        <h5>{{experiencia.descExp}}</h5>
                     </div>
                 </div>
              </div>

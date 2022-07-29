@@ -1,16 +1,13 @@
 .row{padding: 20px;}
 div{background-color: white;}
-.form-group{color: aqua;}
-h1 ,h3, h5, p{color: blue;}
-h1, h2, h3{display: inline;}
+h1 ,h3{color: blue;}
+h5{color: blueviolet;}
+h1, h2,h3, h5{display: inline;}
 a{float:right;}
-
-
-    img{
-        width: 250px;
-        border-radius: 20%;
-        box-shadow: 4px 3px 3px rgb(224, 228, 218);
-        left: 2%;
-        top: 202px;
-        
-    }
+img{
+width: 300px;
+border-radius: 20%;
+box-shadow: 4px 3px 3px rgb(224, 228, 218);
+left: 2%;
+top: 202px;
+}
